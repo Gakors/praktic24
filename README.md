@@ -757,7 +757,7 @@ display(generalSolution)
 Общее решение:
 
 $$
-y(x) = C_1 \cdot e^{-3x} - \frac{K \left(  \sin(5x) - 5 \cos(5x) \right) e^{-4x}}{26}
+y(x) = C_1 \cdot e^{-3x} - \frac{K \left(  \sin(5x) + 5 \cos(5x) \right) e^{-4x}}{26}
 $$
 
 - решение задачи Коши
@@ -769,7 +769,7 @@ display(solvingCauchyProblem)
 Решение задачи Коши:
 
 $$
-y(x) = \frac{K \left( 5 \sin(5x) - 8 \cos(5x) \right) e^{-4x}}{89} + \frac{8K e^{4x}}{89}
+y(x) = \frac{5K e^{-3x}}{26} - \frac{K \left(  \sin(5x) - 5 \cos(5x) \right) e^{-4x}}{26} 
 $$
 
 - проверка решения
