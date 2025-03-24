@@ -229,9 +229,9 @@ $$
 $$
 coefficientMatrix =
 \begin{pmatrix}
-2 & -1 & 0 \\
--1 & -3 & 1 \\
-1 & -4 & 1
+2 & 3 & 0 \\
+3 & 1 & -3 \\
+5 & 4 & -3
 \end{pmatrix}
 $$
     
@@ -252,8 +252,8 @@ $$
 B =
 \begin{pmatrix}
 2 \\
-3 \\
-3
+-1 \\
+-1
 \end{pmatrix}
 $$
 
