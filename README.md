@@ -647,7 +647,7 @@ print(obliqueAsymptote)
 ````
 
 $$
-k = 1, b = -1, obliqueAsymptote = x - 1
+k = 1, b = -2, obliqueAsymptote = x - 2
 $$
 
 - нахождение точек и значений экстремумов, определение типов экстремумов
@@ -660,7 +660,7 @@ criticalPoints = sym.solveset(gxFirstDerivative, x, domain=sym.S.Reals) # точ
 Первая производная:
 
 $$
-\frac{d}{dx} = \frac{2x - 4}{x - 3} - \frac{(x - 2)^2}{(x - 3)^2}
+\frac{d}{dx} = \frac{2x - 5}{x - 3} - \frac{x^2 - 5x + 7}{(x - 3)^2}
 $$
 
 ````python
@@ -678,7 +678,7 @@ for point in criticalPoints:
 Вторая производная функции:
 
 $$
-\frac{d^2}{dx^2} = \frac{2}{x - 3} - \frac{2(2x - 4)}{(x - 3)^2} + \frac{2(x - 2)^2}{(x - 3)^3}
+\frac{d^2}{dx^2} = \frac{2}{x - 3} - \frac{2(2x - 5)}{(x - 3)^2} + \frac{2(x^2 - 5x + 7)}{(x - 3)^3}
 $$
 
 ````python
@@ -687,11 +687,11 @@ for point, value, typeExtrema in extrema:
 ````
 
 $$
-g(x) = 0 \quad \text{в точке} \quad x = 2 \quad \text{(максимум)}
+g(x) = 2 \quad \text{в точке} \quad x = -1 \quad \text{(максимум)}
 $$
 
 $$
-g(x) = 4 \quad \text{в точке} \quad x = 4 \quad \text{(минимум)}
+g(x) = 4 \quad \text{в точке} \quad x = 3 \quad \text{(минимум)}
 $$
 
 - 2D визуализация
