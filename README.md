@@ -623,7 +623,7 @@ p.yLim = [-0.2, 0.2]
 p.show()
 ````
 
-![2D визуализация ряда Тейлора](images/graph_taylor.jpg)
+![2D визуализация ряда Тейлора](graph_taylor.jpg)
 
 3. **Задание 3**
 ````python
