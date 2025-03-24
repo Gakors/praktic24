@@ -797,6 +797,9 @@ else:
 
 Левая часть уравнения:
 
+![image](https://github.com/user-attachments/assets/4b560a81-4bcb-430c-926c-8fef6616f81d)
+
+
 $$
 left = \frac{-4K \left( 5 \sin(5x) - 8 \cos(5x) \right) e^{-4x}}{89} + \frac{K \left( 40 \sin(5x) + 25 \cos(5x) \right) e^{-4x}}{89} + \frac{32K e^{4x}}{89}
 $$
