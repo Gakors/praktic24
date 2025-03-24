@@ -591,13 +591,13 @@ print(secondMember)
 Функция, которая дана:
 
 $$
-f(x) = K\cos(5x) e^{-4x}
+f(x) = K\sin(5x) e^{-4x}
 $$
 
 Ряд Тейлора 1-й степени:
 
 $$ 
-f(x) = \frac{e^{-\frac{4\pi}{3}}}{2} + (x - \frac{\pi}{3})\left(-2e^{-\frac{4\pi}{3}} + \frac{5\sqrt{3}e^{-\frac{4\pi}{3}}}{2}\right) 
+f(x) = (x - pi/3)*(5*exp(-4*pi/3)/2 + 2*sqrt(3)*exp(-4*pi/3)) - sqrt(3)*exp(-4*pi/3)/2
 $$
 
 Ряд Тейлора 2-й степени:
