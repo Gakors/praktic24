@@ -932,10 +932,10 @@ plt.show()
 t = sym.Symbol('t')
 y = sym.Symbol('y')
 
-x_t = 6 * sym.cos(t)
+x_t = 8 * sym.cos(t)
 y_t = 4 * sym.sin(t)
 
-line = 2 * sym.sqrt(3)
+line = sym.sqrt(3)
 
 intersectionT = sym.solve(sym.Eq(y_t, line), t)
 intersectionT = [tValue for tValue in intersectionT if tValue.is_real and -sym.pi <= tValue <= sym.pi]
@@ -951,10 +951,10 @@ for point in intersectionPoints:
 Точки пересечения графиков в виде пар [x, y]:
 
 \[
-[3.000, 3.464]
+[-0.221, 3.464]
 \]  
 \[
-[-3.000, 3.464]
+[0.221, 3.464]
 \]
 
 ````python
@@ -974,7 +974,7 @@ area = float(sym.integrate(areaIntegrand, (t, intersectionT[0], intersectionT[1]
 print(f"\nПлощадь области равна {abs(area):.3f}")
 ````
 
-Площадь фигуры равна 2.174.
+Площадь фигуры равна 0.094.
 
 ````python
 plt.figure(figsize=(12, 8))
@@ -1007,7 +1007,7 @@ plt.show()
 
 ````python
 phi = sym.Symbol('phi', real=True)
-rho = 1 + sym.sqrt(2) * sym.cos(phi)
+rho = sym.cos(2 * phi)
 
 extrema_eq = sym.diff(rho, phi)
 extrema_points = sym.solve(extrema_eq, phi)
@@ -1017,7 +1017,7 @@ print("Точки пересечения (экстремумы):", extrema_point
 Точки пересечения графиков в виде пар [x, y]:
 
 \[
-[0, pi]
+[0, pi/2]
 \]
 
 ````python
@@ -1025,7 +1025,7 @@ area = sym.integrate(1/2 * rho**2, (phi, 0, 2*sym.pi))
 print("Площадь фигуры:", area.evalf())
 ````
 
-Площадь фигуры равна 6.28318530717959
+Площадь фигуры равна 1.57079632679490
 
 ````python
 x = rho * sym.cos(phi)
