@@ -81,9 +81,9 @@ $$
   ``` python
   x1, x2, x3 = sym.symbols('x1 x2 x3')
     
-  coefficientMatrix = sym.Matrix([[2, -1, 0], [-1, -3, 1], [0, 1, -3]]) # матрица коэффициентов
+  coefficientMatrix = sym.Matrix([[2, 3, 0], [3, 1, -3], [0, -3, 1]]) # матрица коэффициентов
   X = sym.Matrix([x1, x2, x3])
-  B = sym.Matrix([[2], [3], [0]])
+  B = sym.Matrix([[2], [-1], [0]])
     
   display(Math(r'Матрица\ коэффициентов\ A:'))
   display(coefficientMatrix)
@@ -122,9 +122,9 @@ $$
 $$
 coefficientMatrix =
 \begin{pmatrix}
-2 & -1 & 0 \\
--1 & -3 & 1 \\
-0 & 1 & -3
+2 & 3 & 0 \\
+3 & 1 & -3 \\
+0 & -3 & 1
 \end{pmatrix}
 $$
     
@@ -145,7 +145,7 @@ $$
 B =
 \begin{pmatrix}
 2 \\
-3 \\
+-1 \\
 0
 \end{pmatrix}
 $$
@@ -155,9 +155,9 @@ $$
 $$
 coefficientMatrixHat =
 \begin{pmatrix}
-2 & -1 & 0 & 2\\
--1 & -3 & 1 & 3\\
-0 & 1 & -3 & 0\\
+2 & 3 & 0 & 2\\
+3 & 1 & -3 & -1\\
+0 & -3 & 1 & 0\\
 \end{pmatrix}
 $$
 
@@ -183,18 +183,18 @@ $$
 $$
 \text{solution} =
 \begin{pmatrix}
-\frac{7}{19} \\
-\frac{-24}{19} \\
-\frac{-8}{19}
+\frac{13}{25} \\
+\frac{8}{25} \\
+\frac{24}{25}
 \end{pmatrix}
 $$
 - вторая матрица
      ``` python
      x1, x2, x3 = sym.symbols('x1 x2 x3')
     
-     coefficientMatrix = sym.Matrix([[2, -1, 0], [-1, -3, 1], [1, -4, 1]])
+     coefficientMatrix = sym.Matrix([[2, 3, 0], [3, 1, -3], [5, 4, -3]])
      X = sym.Matrix([x1, x2, x3])
-     B = sym.Matrix([[2], [3], [3]])
+     B = sym.Matrix([[2], [-1], [-1]])
      display(Math(r'Матрица\ коэффициентов\ A:'))
      display(coefficientMatrix)
      display(Math(r'Вектор\ неизвестных\ X:'))
