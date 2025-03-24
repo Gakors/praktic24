@@ -20,7 +20,7 @@ from sympy.physics.control.control_plots import plt
 - создание матрицы
     ``` python
   a = sym.Symbol('a')
-  A = sym.Matrix([[2, 3a, 0], [3a, 1, -3], [0, -3, 1]]) # создание матрицы
+  A = sym.Matrix([[2, 3*a, 0], [3*a, 1, -3], [0, -3, 1]]) # создание матрицы
   display(A) # вывод матрицы
   ```
 $$
