@@ -800,15 +800,10 @@ else:
 ![image](https://github.com/user-attachments/assets/4b560a81-4bcb-430c-926c-8fef6616f81d)
 
 
-$$
-left = \frac{-4K \left( 5 \sin(5x) - 8 \cos(5x) \right) e^{-4x}}{89} + \frac{K \left( 40 \sin(5x) + 25 \cos(5x) \right) e^{-4x}}{89} + \frac{32K e^{4x}}{89}
-$$
-
 Правая часть уравнения:
 
-$$
-right = \frac{4K \left( 5 \sin(5x) - 8 \cos(5x) \right) e^{-4x}}{89} + \frac{32K e^{4x}}{89} + K e^{-4x} \cos(5x)
-$$
+![image](https://github.com/user-attachments/assets/48de63b4-f474-4496-8ea6-0be1656c08ee)
+
 
 Решение удовлетворяет уравнению и условие y(0) = 0 выполнено.
 
