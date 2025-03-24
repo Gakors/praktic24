@@ -25,9 +25,9 @@ from sympy.physics.control.control_plots import plt
   ```
 $$
 A = \begin{pmatrix}
-2 & a & 0 \\
--a & -3 & 1 \\
-0 & 1 & -3
+2 & 3a & 0 \\
+3a & 1 & -3 \\
+0 & -3 & 1
 \end{pmatrix}
 $$
 - поиск определителя матрицы
