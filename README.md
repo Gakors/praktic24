@@ -813,8 +813,8 @@ else:
 ````python
 x = sym.symbols('x')
 
-yFirst = 4 - x**2
-ySecond = x**2 + 2 * x
+yFirst = x**2 + 1
+ySecond = 3 - x
 display(Math('Первая\\ функция\\ y = %s:' %(sym.latex(yFirst))))
 display(Math('Вторая\\ функция\\ y = %s:' %(sym.latex(ySecond))))
 ````
@@ -822,13 +822,13 @@ display(Math('Вторая\\ функция\\ y = %s:' %(sym.latex(ySecond))))
 Первая функция:
 
 $$
-y = 4 - x^2
+y = x^2 + 1
 $$
 
 Вторая функция:
 
 $$
-y = x^2 + 2x
+y = 3 - x
 $$
 
 ````python
@@ -843,10 +843,10 @@ for point in intersectionPoints:
 Точки пересечения графиков в виде пар [x, y]:
 
 \[
-[-2.00, 0.00]
+[-2.00, 5.00]
 \]  
 \[
-[1.00, 3.00]
+[1.00, 2.00]
 \]
 
 ````python
@@ -870,7 +870,7 @@ $$
 \int_a^b \left| y_{\text{First}}(x) - y_{\text{Second}}(x) \right| \, dx
 $$
 
-Площадь фигуры равна 9.0.
+Площадь фигуры равна 4.5.
 
 - построение графика
 
@@ -893,8 +893,8 @@ minX = coordsX[0] - 1
 maxX = coordsX[1] + 1
 
 valuesX = [minX + i * (maxX - minX) / 500 for i in range(501)]
-valuesY1 = [4 - x**2 for x in valuesX]  
-valuesY2 = [x**2 + 2*x for x in valuesX] 
+valuesY1 = [x**2 + 1 for x in valuesX]  
+valuesY2 = [3 - x for x in valuesX] 
 
 fillX = []
 fillUpperY = []
@@ -911,8 +911,8 @@ for xi, y1i, y2i in zip(valuesX, valuesY1, valuesY2):
             fillLowerY.append(y1i)
 
 plt.figure(figsize=(12, 8))
-plt.plot(valuesX, valuesY1, label='yFirst = 4 - x²', color='blue')
-plt.plot(valuesX, valuesY2, label='ySecond = x² + 2x', color='red')
+plt.plot(valuesX, valuesY1, label='yFirst = x² + 1', color='blue')
+plt.plot(valuesX, valuesY2, label='ySecond = 3 - x', color='red')
 plt.fill_between(fillX, fillUpperY, fillLowerY, color='green', alpha=0.5, label='площадь')
 
 plt.title('Площадь между кривыми', fontsize=20)
