@@ -417,6 +417,7 @@ $$
         lambda_ = sym.symbols('lambda')
         identityMatrix = sym.eye(3) # единичная матрица
         ALambda = zeroA - lambda_ * identityMatrix # матрица вида [A - λE]
+        display(ALambda)
         characteristicPolynomial = ALambda.det()
         display(characteristicPolynomial) # характеристический многочлен
         
@@ -453,21 +454,21 @@ $$
 ALambda =
 \begin{bmatrix}
 2 - \lambda & 0 & 0 \\
-0 & -\lambda - 3 & 2 \\
-0 & 2 & -\lambda - 3
+0 & 1-\lambda & -3 \\
+0 & -3 & 1-\lambda 
 \end{bmatrix}
 $$
 
 Характеристический многочлен \( characteristicPolynomial \):
 
 $$
-characteristicPolynomial = -\lambda^3 - 4\lambda^2 + 7\lambda + 10
+characteristicPolynomial = -\lambda^3 + 4\lambda^2 + 4\lambda + 16
 $$
 
 Собственные значения \( eigenvalues \):
 
 $$
-eigenvalues = [-5, -1, 2]
+eigenvalues = [-2, 2, 4]
 $$
 
 Матрица \( ALambdaIdentity \):
@@ -475,15 +476,15 @@ $$
 $$
 ALambdaIdentity =
 \begin{bmatrix}
-3 & 0 & 0 \\
-0 & -2 & 2 \\
-0 & 2 & -2
+0 & 0 & 0 \\
+0 & -1 & -3 \\
+0 & -3 & -1
 \end{bmatrix}
 $$
 
-Для лямбда = -5 собственный вектор равен [(0, 1, -1)].  
-Для лямбда = -1 собственный вектор равен [(0, 1, -1), (0, 1, 1)].    
-Для лямбда = 2 собственный вектор равен [(0, 1, -1), (0, 1, 1), (1, 0, 0)].  
+Для лямбда = -2 собственный вектор равен [(0, 1, 1)]
+Для лямбда = 2 собственный вектор равен [(0, 1, 1), (1, 0, 0)]
+Для лямбда = 4 собственный вектор равен [(0, 1, 1), (1, 0, 0), (0, 1, -1)]  
 Результаты совпадают.
 
 # II. Математический анализ
