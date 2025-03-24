@@ -738,14 +738,14 @@ plt.show()
 x, K = sym.symbols('x, K')
 y = sym.Function('y')
 
-diffEquation = sym.Eq(sym.Derivative(y(x), x), 4*y(x) + K * sym.cos(5*x)*sym.exp(-4*x))
+diffEquation = sym.Eq(sym.Derivative(y(x), x), -3*y(x) + K * sym.sin(5*x)*sym.exp(-4*x))
 print(diffEquation)
 ````
 
 Уравнение:
 
 $$
-\frac{d}{dx}y(x) = 4y(x) + K \cdot \cos(5x) \cdot e^{-4x}
+\frac{d}{dx}y(x) = -3y(x) + K \cdot \sin(5x) \cdot e^{-4x}
 $$
 - нахождение решения уравнения
 
@@ -757,7 +757,7 @@ display(generalSolution)
 Общее решение:
 
 $$
-y(x) = C_1 \cdot e^{4x} + \frac{K \left( 5 \sin(5x) - 8 \cos(5x) \right) e^{-4x}}{89}
+y(x) = C_1 \cdot e^{-3x} - \frac{K \left(  \sin(5x) - 5 \cos(5x) \right) e^{-4x}}{26}
 $$
 
 - решение задачи Коши
