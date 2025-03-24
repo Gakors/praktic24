@@ -202,6 +202,7 @@ $$
      display(Math(r'Вектор\ свободных\ членов\ B:'))
      display(B)
      coefficientMatrixHat = coefficientMatrix.row_join(B)
+     display(coefficientMatrixHat)
     
      rankCoefficientMatrix = coefficientMatrix.rank() # ранг матрицы коэффициентов
      rankCoefficientMatrixHat = coefficientMatrixHat.rank() # ранг расширенной матрицы
@@ -262,9 +263,9 @@ $$
 $$
 coefficientMatrixHat =
 \begin{pmatrix}
-2 & -1 & 0 & 2\\
--1 & -3 & 1 & 3\\
-0 & 1 & -3 & 3\\
+2 & 3 & 0 & 2\\
+3 & 1 & -3 & -1\\
+5 & 4 & -3 & -1\\
 \end{pmatrix}
 $$
 
@@ -289,9 +290,9 @@ $$
      ``` python
      x1, x2, x3 = sym.symbols('x1 x2 x3')
     
-     coefficientMatrix = sym.Matrix([[2, -1, 0], [-1, -3, 1], [1, -4, 1]])
+     coefficientMatrix = sym.Matrix([[2, 3, 0], [3, 1, -3], [5, 4, -3]])
      X = sym.Matrix([x1, x2, x3])
-     B = sym.Matrix([[2], [3], [3]])
+     B = sym.Matrix([[2], [-1], [1]])
      display(Math(r'Матрица\ коэффициентов\ A:'))
      display(coefficientMatrix)
      display(Math(r'Вектор\ неизвестных\ X:'))
@@ -299,6 +300,7 @@ $$
      display(Math(r'Вектор\ свободных\ членов\ B:'))
      display(B)
      coefficientMatrixHat = coefficientMatrix.row_join(B)
+     display(coefficientMatrixHat)
 
      rankCoefficientMatrix = coefficientMatrix.rank() # ранг матрицы коэффициентов
      rankCoefficientMatrixHat = coefficientMatrixHat.rank()  # ранг расширенной матрицы
@@ -326,9 +328,9 @@ $$
 $$
 coefficientMatrix =
 \begin{pmatrix}
-2 & -1 & 0 \\
--1 & -3 & 1 \\
-1 & -4 & 1
+2 & 3 & 0 \\
+3 & 1 & -3 \\
+5 & 4 & -3
 \end{pmatrix}
 $$
     
@@ -349,8 +351,8 @@ $$
 B =
 \begin{pmatrix}
 2 \\
-3 \\
-5
+-1 \\
+1
 \end{pmatrix}
 $$
 
@@ -359,9 +361,9 @@ $$
 $$
 coefficientMatrixHat =
 \begin{pmatrix}
-2 & -1 & 0 & 2\\
--1 & -3 & 1 & 3\\
-0 & 1 & -3 & 5\\
+2 & 3 & 0 & 2\\
+3 & 1 & -3 & -1\\
+5 & 4 & -3 & 1\\
 \end{pmatrix}
 $$
 
