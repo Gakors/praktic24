@@ -62,9 +62,9 @@ $$
    ```
 $$
 \text{inverseA} \cdot A = \begin{pmatrix}
-\frac{8}{3a^2 + 16} & \frac{-3a}{3a^2 + 16} & \frac{-a}{3a^2 + 16} \\
-\frac{-3a}{3a^2 + 16} & \frac{-6}{3a^2 + 16} & \frac{-2}{3a^2 + 16} \\
-\frac{-a}{3a^2 + 16} & \frac{-2}{3a^2 + 16} & \frac{-a^2 - 6}{3a^2 + 16}
+\frac{8}{9a^2 + 16} & \frac{3a}{9a^2 + 16} & \frac{9a}{9a^2 + 16} \\
+\frac{3a}{9a^2 + 16} & \frac{-2}{9a^2 + 16} & \frac{-6}{9a^2 + 16} \\
+\frac{9a}{9a^2 + 16} & \frac{-6}{9a^2 + 16} & \frac{9a^2 - 2}{9a^2 + 16}
 \end{pmatrix} \cdot \begin{pmatrix}
 2 & a & 0 \\
 -a & -3 & 1 \\
