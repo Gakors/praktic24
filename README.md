@@ -493,17 +493,17 @@ $$
 ````python
 x, K = sym.symbols('x,K') 
 
-fx = K * sym.cos(5 * x) * sym.exp(-4 * x) # функция
+fx = K * sym.sin(5 * x) * sym.exp(-4 * x) # функция
 print(fx) # вывод функции
 ````
 $$
-f(x) = K \cos(5x) e^{-4x}
+f(x) = K \sin(5x) e^{-4x}
 $$
 
 - нахождение производных
 ````python
 y = sym.symbols('y')
-fy = K * sym.cos(5 * y) * sym.exp(-4 * y) # функция для y
+fy = K * sym.sin(5 * y) * sym.exp(-4 * y) # функция для y
 dfx_dx = sym.diff(fx, x) # 1-я производная
 d2fx_dx2 = sym.diff(fx, x, 2) # 2-я производная
 d3fxfy_dxdy2 = sym.diff(fx, x) * sym.diff(fy, y, 2) # 3-я производная
@@ -513,15 +513,15 @@ print(d3fxfy_dxdy2)
 ````
 
 $$
-\frac{df}{dx} = -5K e^{-4x} \sin(5x) - 4K e^{-4x} \cos(5x)
+\frac{df}{dx} = -4K e^{-4x} \sin(5x) + 5K e^{-4x} \cos(5x)
 $$
 
 $$
-\frac{d^2f(x)}{dx^2} = K \left( 40 \sin(5x) - 9 \cos(5x) \right) e^{-4x}
+\frac{d^2f(x)}{dx^2} = -K \left( 9 \sin(5x) + 40 \cos(5x) \right) e^{-4x}
 $$
 
 $$
-\frac{\partial^3f(x)f(y)}{\partial x \partial y^2} = K \left( -5K e^{-4x} \sin(5x) - 4K e^{-4x} \cos(5x) \right) \left( 40 \sin(5y) - 9 \cos(5y) \right) e^{-4y}
+\frac{\partial^3f(x)f(y)}{\partial x \partial y^2} = -K \left( -4K e^{-4x} \sin(5x) + 5K e^{-4x} \cos(5x) \right) \left( 9 \sin(5y) + 40 \cos(5y) \right) e^{-4y}
 $$
 
 - неопределенный и определенный интегралы
