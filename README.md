@@ -527,7 +527,7 @@ $$
 - неопределенный и определенный интегралы
 ````python
 z = sym.symbols('z')
-fz = K * sym.cos(5 * z) * sym.exp(-4 * z) # функция для z
+fz = K * sym.sin(5 * z) * sym.exp(-4 * z) # функция для z
 indefiniteIntegral = sym.integrate(fz, z) # неопределенный интеграл
 definiteIntegral = sym.integrate(fz, (z, 0, sym.pi)) # определенный интеграл
 print(indefiniteIntegral)
@@ -537,19 +537,19 @@ print(definiteIntegral)
 Функция f(z):
 
 $$
-f(z) = K \cdot \cos(5z) \cdot e^{-4z}
+f(z) = K \cdot \sin(5z) \cdot e^{-4z}
 $$
 
 Неопределенный интеграл:
 
 $$
-\int f(x) \, dx = K \left( \frac{5 e^{-4z} \sin(5z)}{41} - \frac{4 e^{-4z} \cos(5z)}{41} \right)
+\int f(x) \, dx = K \left( \frac{-4 e^{-4z} \sin(5z)}{41} - \frac{5 e^{-4z} \cos(5z)}{41} \right)
 $$
 
 Определенный интеграл:
 
 $$
-\int_0^\pi f(\xi) \, d\xi = \frac{4K e^{-4\pi}}{41} + \frac{4K}{41}
+\int_0^\pi f(\xi) \, d\xi = \frac{5K e^{-4\pi}}{41} + \frac{5K}{41}
 $$
 
 - пределы
@@ -562,7 +562,7 @@ print(lim2)
 print(lim3)
 ````
 $$
-\lim_{x \to 2} f(x) = K e^{-8} \cos(10)
+\lim_{x \to 2} f(x) = K e^{-8} \sin(10)
 $$
 
 $$
@@ -570,7 +570,7 @@ $$
 $$
 
 $$
-\lim_{x \to -\infty} f(x) = \infty \cdot \text{sign}(K) \cdot \text{sign}(\text(-1, 1))
+\lim_{x \to -\infty} f(x) = -\infty \cdot \text{sign}(K) \cdot \text{sign}(\text(-1, 1))
 $$
 
 2. **Задание 2**
