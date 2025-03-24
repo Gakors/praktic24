@@ -66,9 +66,9 @@ $$
 \frac{3a}{9a^2 + 16} & \frac{-2}{9a^2 + 16} & \frac{-6}{9a^2 + 16} \\
 \frac{9a}{9a^2 + 16} & \frac{-6}{9a^2 + 16} & \frac{9a^2 - 2}{9a^2 + 16}
 \end{pmatrix} \cdot \begin{pmatrix}
-2 & a & 0 \\
--a & -3 & 1 \\
-0 & 1 & -3
+2 & 3a & 0 \\
+3a & 1 & -3 \\
+0 & -3 & 1
 \end{pmatrix} = \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
